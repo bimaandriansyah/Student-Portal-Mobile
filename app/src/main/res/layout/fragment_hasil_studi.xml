@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentprofil.HasilStudi">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/datadiri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/biru2"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/datadiri">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Hasil Studi"
+                android:textStyle="bold"
+                android:textColor="@color/biru5"
+                android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/datadiri">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/isiDataDiri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_menu"
+                    android:elevation="2dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#a7d176"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_marginStart="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Semester 1"
+                            android:textColor="@color/biru5"
+                            android:textStyle="bold"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="0,1,2">
+                            <TableRow>
+                                <TextView
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="Kode"
+                                    android:gravity="center"
+                                    android:textColor="@color/biru5"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:gravity="center"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="Nama Matakuliah"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/biru5" />
+                                <TextView
+                                    android:gravity="center"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="SKS Teori/Praktek"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/biru5" />
+                                <TextView
+                                    android:gravity="center"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="Nilai Angka"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/biru5" />
+                                <TextView
+                                    android:gravity="center"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="Nilai Huruf"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/biru5" />
+                                <TextView
+                                    android:gravity="center"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="Total Nilai"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/biru5" />
+                            </TableRow>
+
+                        </TableLayout>
+                    </HorizontalScrollView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@color/hadir"
+                        android:padding="5dp">
+                        <LinearLayout
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_marginRight="5dp"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_cntang"
+                                android:tint="@color/biru5"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="IP Semester : 3,61"
+                                android:textColor="@color/biru5"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_marginRight="5dp"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_cntang"
+                                android:tint="@color/biru5"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="IPK : 3,61"
+                                android:textColor="@color/biru5"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

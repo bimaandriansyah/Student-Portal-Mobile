@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentkuesioner.VisiMisi">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/datadiri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/biru2"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/datadiri">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Kuesioner Pemahaman Visi Misi"
+                android:textStyle="bold"
+                android:textColor="@color/biru5"
+                android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/datadiri">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/isiVisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_menu"
+                    android:elevation="2dp"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Visi"
+                        android:textColor="@color/biru5"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:background="@color/biru4"
+                        android:padding="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/biru5"
+                        android:text="Menjadi pendidikan tinggi vokasi yang berkualitas, berbasis iptek, inovasi dan berdaya saing Nasional."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/isiMisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_menu"
+                    android:elevation="2dp"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/isiVisi"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Misi"
+                        android:textColor="@color/biru5"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:background="@color/biru4"
+                        android:padding="10dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/biru5"
+                        android:text="Sebagai upaya untuk mewujudkan visi tersebut di atas, maka misi Politeknik Negeri Madiun:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/biru5"
+                        android:text="1. Meningkatkan akses dalam penyelenggaraan Pendidikan Vokasi yang relevan, inovatif, dan berkualitas untuk menghasilkan lulusan yang berdaya saing nasional."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/biru5"
+                        android:text="2. Meningkatkan kapasitas penelitian terapan dan pengabdian kepada masyarakat yang bermanfaat bagi ilmu pengetahuan dan teknologi dan kesejahteraan masyarakat."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/biru5"
+                        android:text="3. Meningkatkan penguatan kerja sama dalam mendukung keberlanjutan pemanfaatan sumber daya manusia terampil; dan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/biru5"
+                        android:text="4. Mewujudkan tata kelola perguruan tinggi yang baik"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/pengumuman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/isiMisi"
+                    android:background="@drawable/bg_btlogin1"
+                    android:backgroundTint="#00bcd4"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_info"
+                        android:tint="@color/putih"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kuesioner ini khusus mahasiswa semester 3. Isilah kuisioner ini dengan sungguh-sungguh sebagai survey pemahaman sekaligus sosialisasi Visi dan Misi PNM. Identitas pengisi akan disembunyikan (anonim), data evaluasi sepenuhnya milik P4MP PNM. Semua pertanyaan bersifat WAJIB diisi."
+                        android:textColor="@color/putih"
+                        android:textStyle="bold"
+                        android:gravity="left"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/isiKuesioner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_menu"
+                    android:elevation="2dp"
+                    android:padding="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/pengumuman">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1">
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="1"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM mudah ditemukan"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:layout_gravity="center_vertical"
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="2"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM dituangkan dalam media cetak maupun elektronik"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="3"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM disampaikan pada berbagai even kegiatan internal maupun external"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="4"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM mengandung tujuan dan sasaran jangka pendek, menengah dan panjang"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="5"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM bermakna menyeluruh dan saling terkait"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="6"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM bersesuaian dengan kebutuhan stakeholder"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="7"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM mencantumkan kekhasan institusi"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="8"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM memiliki nilai argumentatif"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="9"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM menjangkau barbagai kepentingan masyarakat"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="30dp"
+                                    android:padding="3dp"
+                                    android:text="10"
+                                    android:textColor="@color/biru5"
+                                    android:layout_gravity="center_vertical"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="250dp"
+                                    android:id="@+id/txtNIK"
+                                    android:gravity="left"
+                                    android:padding="3dp"
+                                    android:text="Visi Misi PNM bersifat realistik dan terukur"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/biru5" />
+                                <RadioGroup
+                                    android:id="@+id/radioPilihan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Tidak Setuju" />
+
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbTdkSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Tidak Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Setuju" />
+                                    <RadioButton
+                                        android:textColor="@color/biru5"
+                                        android:id="@+id/rbSgtSetuju"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:text="Sangat Setuju" />
+                                </RadioGroup>
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/isiKuesioner"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reset"
+                        android:background="@null"
+                        android:textColor="@color/biru5"
+                        android:layout_marginRight="20dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUBMIT"
+                        android:textStyle="bold"
+                        android:background="@drawable/bg_btlogin1"
+                        android:backgroundTint="@color/dasar"
+                        android:textColor="@color/putih"
+                        android:layout_marginLeft="20dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

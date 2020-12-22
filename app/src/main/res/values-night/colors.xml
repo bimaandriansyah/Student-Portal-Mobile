@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4BE0FE</color>
+    <color name="colorPrimaryDark">#2b3136</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="dasar">#191a1c</color>
+    <color name="black">#4F5865</color>
+
+    <color name="hadir">#dcedc8</color>
+    <color name="izin">#ffecb3</color>
+    <color name="alpha">#f9bdbb</color>
+
+    <color name="biru">#4BE0FE</color>
+    <color name="biru1">#F6FCFC</color>
+    <color name="biru2">#1a1b1d</color>
+    <color name="biru3">#B2D8ED</color>
+    <color name="biru4">#6CA0D1</color>
+    <color name="biru5">#FFFFFF</color>
+
+    <color name="binom">#25bbE9</color>
+    <color name="gra1">#4BE0FE</color>
+    <color name="gra2">#1B306E</color>
+
+    <color name="putih">#ffffff</color>
+    <color name="putih2">#202225</color>
+    <color name="hitam">#252A34</color>
+    <color name="merah">#FF2E63</color>
+    <color name="abu">#797979</color>
+</resources>

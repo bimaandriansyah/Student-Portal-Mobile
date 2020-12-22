@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WisudaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_top"/>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_left"
+                android:layout_gravity="left"
+                android:layout_marginRight="140dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wisuda"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/putih"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <HorizontalScrollView
+        android:id="@+id/btnSubKul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_DaftarWisuda"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Daftar Wisuda"
+                android:textColor="@color/dasar"/>
+
+            <Button
+                android:id="@+id/btn_Magang"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bgbtn"
+                android:padding="5dp"
+                android:text="Magang / PKL"
+                android:textColor="@color/dasar" />
+
+            <Button
+                android:id="@+id/btn_Keterampilan1"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Keterampilan"
+                android:textColor="@color/dasar"/>
+            <Button
+                android:id="@+id/btn_Prestasi"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Prestasi"
+                android:textColor="@color/dasar"/>
+            <Button
+                android:id="@+id/btn_Organisasi"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Organisasi"
+                android:textColor="@color/dasar"/>
+            <Button
+                android:id="@+id/btn_BahasaInternasional"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Bahasa Internasional"
+                android:textColor="@color/dasar"/>
+            <Button
+                android:id="@+id/btn_Pernyataan"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Pernyataan"
+                android:textColor="@color/dasar"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:id="@+id/fragmentSubKul"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btnSubKul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/bg_top"/>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_left"
+                android:layout_gravity="left"
+                android:layout_marginRight="140dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/putih"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/isiProfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_menu"
+        android:backgroundTint="@color/putih"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/foto"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/biru5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/biru5" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/biru5"
+            android:layout_marginBottom="10dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:text="Status"
+                    android:textColor="@color/biru5"
+                    android:textStyle="bold"
+                    android:padding="3dp"/>
+                <TextView
+                    android:text=":"
+                    android:gravity="center"
+                    android:textColor="@color/biru5"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_btlogin"
+                        android:backgroundTint="#a7d176"
+                        android:textColor="@color/putih"
+                        android:text="-"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"/>
+                </LinearLayout>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="NPM"
+                    android:textColor="@color/biru5"
+                    android:textStyle="bold"
+                    android:padding="3dp"/>
+                <TextView
+                    android:text=":"
+                    android:gravity="center"
+                    android:textColor="@color/biru5"/>
+                <TextView
+                    android:id="@+id/txtNPM"
+                    android:text="-"
+                    android:textColor="@color/biru5"
+                    android:padding="3dp"
+                    android:gravity="left"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Angkatan"
+                    android:textColor="@color/biru5"
+                    android:textStyle="bold"
+                    android:padding="3dp"/>
+                <TextView
+                    android:text=":"
+                    android:gravity="center"
+                    android:textColor="@color/biru5"/>
+                <TextView
+                    android:id="@+id/txtThAkt"
+                    android:text="-"
+                    android:textColor="@color/biru5"
+                    android:padding="3dp"
+                    android:gravity="left"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Prodi"
+                    android:textColor="@color/biru5"
+                    android:textStyle="bold"
+                    android:padding="3dp"/>
+                <TextView
+                    android:text=":"
+                    android:gravity="center"
+                    android:textColor="@color/biru5"/>
+                <TextView
+                    android:id="@+id/txtProdi"
+                    android:text="-"
+                    android:textColor="@color/biru5"
+                    android:padding="3dp"
+                    android:gravity="left"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Kelas"
+                    android:textColor="@color/biru5"
+                    android:textStyle="bold"
+                    android:padding="3dp"/>
+                <TextView
+                    android:text=":"
+                    android:gravity="center"
+                    android:textColor="@color/biru5"/>
+                <TextView
+                    android:id="@+id/txtKelas"
+                    android:text="-"
+                    android:textColor="@color/biru5"
+                    android:padding="3dp"
+                    android:gravity="left"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Nomor HP"
+                    android:textColor="@color/biru5"
+                    android:textStyle="bold"
+                    android:padding="3dp"/>
+                <TextView
+                    android:text=":"
+                    android:gravity="center"
+                    android:textColor="@color/biru5"/>
+                <TextView
+                    android:id="@+id/txtNoHP"
+                    android:text="-"
+                    android:textColor="@color/biru5"
+                    android:padding="3dp"
+                    android:gravity="left"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Kota Asal"
+                    android:textColor="@color/biru5"
+                    android:textStyle="bold"
+                    android:padding="3dp"/>
+                <TextView
+                    android:text=":"
+                    android:gravity="center"
+                    android:textColor="@color/biru5"/>
+                <TextView
+                    android:id="@+id/txtKotaAsal"
+                    android:text="-"
+                    android:textColor="@color/biru5"
+                    android:padding="3dp"
+                    android:gravity="left"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/btnSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/isiProfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dataDiri"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Data Diri"
+                android:textColor="@color/dasar"/>
+
+            <Button
+                android:id="@+id/btn_dataOrtu"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Data Orang Tua"
+                android:textColor="@color/dasar"/>
+
+            <Button
+                android:id="@+id/btn_rekapPresensi"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Rekap Presensi"
+                android:textColor="@color/dasar"/>
+            <Button
+                android:id="@+id/btn_hasilStudi"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Hasil Studi"
+                android:textColor="@color/dasar"/>
+            <Button
+                android:id="@+id/btn_keterampilan"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Keterampilan"
+                android:textColor="@color/dasar"/>
+            <Button
+                android:id="@+id/btn_magang"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/bgbtn"
+                android:text="Magang/PKL"
+                android:textColor="@color/dasar"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:id="@+id/fragmentSub"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btnSub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

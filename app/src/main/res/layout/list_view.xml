@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_menu"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:elevation="3dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/matkul"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam ke 1 - 2"
+                android:textStyle="bold"
+                android:textColor="@color/biru5"
+                android:textSize="13dp"/>
+            <TextView
+                android:id="@+id/txtMatKul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perancangan dan Administrasi Jaringan"
+                android:textColor="@color/biru5"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtNamaDosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/biru5"
+                android:text="Hendrik Kusbandono, S.Kom., M.Kom."
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/txtRuang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/biru5"
+                android:text="Gedung M. Nuh R. 303"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

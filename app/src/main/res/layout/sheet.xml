@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Data Magang / PKL"
+            android:textColor="@color/biru5"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/abu" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/edtNPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:hint="Judul"
+                    android:textColor="@color/biru5"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@color/putih"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:text="Judul"
+            android:textColor="@color/dasar"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/layoutPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/edtNPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:hint="PT. XXX"
+                    android:textColor="@color/biru5"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@color/putih"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:text="Tempat"
+            android:textColor="@color/dasar"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/layoutPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/edtNPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:hint="Provinsi"
+                    android:textColor="@color/biru5"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@color/putih"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:text="Provinsi"
+            android:textColor="@color/dasar"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/layoutPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/edtNPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:hint="Kota / Kabupaten"
+                    android:textColor="@color/biru5"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@color/putih"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:text="Kota / Kabupaten"
+            android:textColor="@color/dasar"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/layoutPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/edtNPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:hint="DD/MM/YYYY"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColor="@color/biru5"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@color/putih"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:text="Tanggal Mulai Magang"
+            android:textColor="@color/dasar"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/layoutPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/edtNPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:hint="DD/MM/YYYY"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColor="@color/biru5"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@color/putih"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:text="Tanggal Terakhir Magang"
+            android:textColor="@color/dasar"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/layoutPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
+
+                <EditText
+                    android:id="@+id/edtNPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:hint="Ringkasan"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColor="@color/biru5"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@color/putih"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:text="Ringkasan"
+            android:textColor="@color/dasar"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/layoutPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layoutPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_close"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batal" />
+
+        <Button
+            android:id="@+id/bt_subscribe"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btlogin"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Tambahkan" />
+    </LinearLayout>
+
+</LinearLayout>
